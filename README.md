@@ -1,7 +1,7 @@
 
----
-title: 'live2d_api JAVA'
----
+
+# live2d_api JAVA
+
 
 ### [Live2D API][1]
 &emsp;&emsp;详情请见原作者的github
