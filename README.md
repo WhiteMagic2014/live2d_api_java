@@ -36,10 +36,14 @@
 
 
 ### 参考资料
+- php版后端api
 https://github.com/fghrsh/live2d_api
 
-[1]: https://github.com/fghrsh/live2d_api
+- 前端使用参考原作者 https://www.fghrsh.net/post/123.html
+- 或者下面这位大佬的文章 https://github.com/stevenjoezhang/live2d-widget
 
+
+[1]: https://github.com/fghrsh/live2d_api
 
 ## 版权声明
 
