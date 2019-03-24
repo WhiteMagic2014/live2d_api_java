@@ -1,0 +1,103 @@
+{
+  "version": "Live2DViewerEX Config 1.0",
+  "model": "yusura_pd.moc",
+  "textures": [
+    "textures.512/yusura_tex_00.png",
+    "textures.512/yusura_tex_01.png",
+    "textures.512/yusura_tex_02.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": -0.32,
+    "width": 2.4
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idle/yusura_001.mtn"
+      }
+    ],
+    "tap": [
+      {
+        "file": "motions/tap/yusura_002.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_003.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_004.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_005.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_006.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_007.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_008.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_009.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_010.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_011.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_012.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_013.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_014.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_015.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_016.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_017.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_018.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_019.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_020.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_021.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_022.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_023.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_024.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_025.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_026.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_027.mtn"
+      }
+    ]
+  },
+  "physics": "physics.json",
+  "pose": "pose.json"
+}

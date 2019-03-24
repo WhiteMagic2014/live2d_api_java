@@ -1,0 +1,103 @@
+{
+  "version": "Live2DViewerEX Config 1.0",
+  "model": "kotone_pd.moc",
+  "textures": [
+    "textures.512/kotone_tex_00.png",
+    "textures.512/kotone_tex_01.png",
+    "textures.512/kotone_tex_02.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": -0.32,
+    "width": 2.4
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idle/kotone_001.mtn"
+      }
+    ],
+    "tap": [
+      {
+        "file": "motions/tap/kotone_002.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_003.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_004.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_005.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_006.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_007.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_008.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_009.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_010.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_011.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_012.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_013.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_014.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_015.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_016.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_017.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_018.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_019.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_020.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_021.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_022.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_023.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_024.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_025.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_026.mtn"
+      },
+      {
+        "file": "motions/tap/kotone_027.mtn"
+      }
+    ]
+  },
+  "physics": "physics.json",
+  "pose": "pose.json"
+}

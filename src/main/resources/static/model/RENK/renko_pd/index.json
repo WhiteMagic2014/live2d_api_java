@@ -1,0 +1,103 @@
+{
+  "version": "Live2DViewerEX Config 1.0",
+  "model": "renko_pd.moc",
+  "textures": [
+    "textures.512/renko_tex_00.png",
+    "textures.512/renko_tex_01.png",
+    "textures.512/renko_tex_02.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": -0.32,
+    "width": 2.4
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idle/renko_001.mtn"
+      }
+    ],
+    "tap": [
+      {
+        "file": "motions/tap/renko_002.mtn"
+      },
+      {
+        "file": "motions/tap/renko_003.mtn"
+      },
+      {
+        "file": "motions/tap/renko_004.mtn"
+      },
+      {
+        "file": "motions/tap/renko_005.mtn"
+      },
+      {
+        "file": "motions/tap/renko_006.mtn"
+      },
+      {
+        "file": "motions/tap/renko_007.mtn"
+      },
+      {
+        "file": "motions/tap/renko_008.mtn"
+      },
+      {
+        "file": "motions/tap/renko_009.mtn"
+      },
+      {
+        "file": "motions/tap/renko_010.mtn"
+      },
+      {
+        "file": "motions/tap/renko_011.mtn"
+      },
+      {
+        "file": "motions/tap/renko_012.mtn"
+      },
+      {
+        "file": "motions/tap/renko_013.mtn"
+      },
+      {
+        "file": "motions/tap/renko_014.mtn"
+      },
+      {
+        "file": "motions/tap/renko_015.mtn"
+      },
+      {
+        "file": "motions/tap/renko_016.mtn"
+      },
+      {
+        "file": "motions/tap/renko_017.mtn"
+      },
+      {
+        "file": "motions/tap/renko_018.mtn"
+      },
+      {
+        "file": "motions/tap/renko_019.mtn"
+      },
+      {
+        "file": "motions/tap/renko_020.mtn"
+      },
+      {
+        "file": "motions/tap/renko_021.mtn"
+      },
+      {
+        "file": "motions/tap/renko_022.mtn"
+      },
+      {
+        "file": "motions/tap/renko_023.mtn"
+      },
+      {
+        "file": "motions/tap/renko_024.mtn"
+      },
+      {
+        "file": "motions/tap/renko_025.mtn"
+      },
+      {
+        "file": "motions/tap/renko_026.mtn"
+      },
+      {
+        "file": "motions/tap/renko_027.mtn"
+      }
+    ]
+  },
+  "physics": "physics.json",
+  "pose": "pose.json"
+}

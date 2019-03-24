@@ -25,11 +25,11 @@ public class ModelTextures {
 	 * @author: chenhaoyu
 	 * @time:Mar 23, 2019 12:14:58 PM
 	 */
-	public static Object getTextures(String modelName, int id) {
+	public static JSONArray getTextures(String modelName, int id) {
 		JSONArray list = getList(modelName);
 		Object obj = list.get(id - 1);
 		if (obj instanceof JSONArray) {
-			return obj;
+			return (JSONArray) obj;
 		} else {
 			return new JSONArray().fluentAdd(obj);
 		}

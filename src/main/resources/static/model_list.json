@@ -30,7 +30,31 @@
             "HyperdimensionNeptunia/histoire",
             "HyperdimensionNeptunia/histoirenohover"
         ],
-        "KantaiCollection/murakumo"
+        "KantaiCollection/murakumo",
+	[
+		"YUSU/yusura_pd",
+		"YUSU/yusura_nd",
+		"YUSU/yusura_nn",
+		"YUSU/yusura_pn"
+	],
+	[
+		"YAYO/yayoi_nd",
+		"YAYO/yayoi_pd",
+		"YAYO/yayoi_pn",
+		"YAYO/yayoi_nn"
+	],
+	[
+		"RENK/renko_nd",
+		"RENK/renko_nn",
+		"RENK/renko_pd",
+		"RENK/renko_pn"
+	],
+	[
+		"KOTO/kotone_nd",
+		"KOTO/kotone_nn",
+		"KOTO/kotone_pd",
+		"KOTO/kotone_pn"
+	]
     ],
     "messages": [
         "来自 Potion Maker 的 Pio 酱 ~",
@@ -39,6 +63,10 @@
         "来自 Bilibili Live 的 33 的说",
         "Shizuku Talk ！这里是 Shizuku ~",
         "Nep! Nep! 超次元游戏：海王星 系列",
-        "艦隊これくしょん / 叢雲(むらくも)"
+        "艦隊これくしょん / 叢雲(むらくも)",
+	"yusura 哟!",
+	"yayoi ~",
+	"renko !",
+	"kotone ~"
     ]
 }

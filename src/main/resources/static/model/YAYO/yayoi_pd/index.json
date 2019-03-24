@@ -1,0 +1,91 @@
+{
+  "version": "Live2DViewerEX Config 1.0",
+  "model": "yayoi_pd.moc",
+  "textures": [
+    "textures.512/yayoi_tex_00.png",
+    "textures.512/yayoi_tex_01.png",
+    "textures.512/yayoi_tex_02.png"
+  ],
+  "layout": {
+    "center_x": 0.0,
+    "center_y": -0.32,
+    "width": 2.4
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "motions/idle/yayoi_001.mtn"
+      }
+    ],
+    "tap": [
+      {
+        "file": "motions/tap/yayoi_002.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_003.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_004.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_006.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_007.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_008.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_009.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_010.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_011.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_012.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_013.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_014.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_015.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_016.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_017.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_018.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_019.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_020.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_021.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_022.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_023.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_024.mtn"
+      }
+    ]
+  },
+  "physics": "physics.json",
+  "pose": "pose.json"
+}

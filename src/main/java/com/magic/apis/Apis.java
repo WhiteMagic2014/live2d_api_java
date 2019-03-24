@@ -49,7 +49,7 @@ public class apis {
 			realModelName = modelName.toString();
 			json = FileUtils.readJsonFromClassPath("model/" + realModelName + "/index.json", JSONObject.class);
 			if (modelTexturesId > 0) {
-				Object modelTexturesName = ModelTextures.getTextures(modelName.toString(), modelTexturesId);
+				JSONArray modelTexturesName = ModelTextures.getTextures(modelName.toString(), modelTexturesId);
 				if (modelTexturesName != null) {
 					json.put("textures", modelTexturesName);
 				}
