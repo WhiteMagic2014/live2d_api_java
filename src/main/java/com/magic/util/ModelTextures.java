@@ -27,6 +27,9 @@ public class ModelTextures {
 	 */
 	public static JSONArray getTextures(String modelName, int id) {
 		JSONArray list = getList(modelName);
+		if (list.isEmpty()) {
+			return new JSONArray();
+		}
 		Object obj = list.get(id - 1);
 		if (obj instanceof JSONArray) {
 			return (JSONArray) obj;

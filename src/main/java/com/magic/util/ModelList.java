@@ -31,7 +31,8 @@ public class ModelList {
 	public static Object idToName(int id) throws IOException {
 		JSONObject modelListJson = getList();
 		JSONArray models = modelListJson.getJSONArray("models");
-		return models.get(id - 1);
+		int realId = id % models.size();
+		return models.get(realId - 1);
 	}
 
 }

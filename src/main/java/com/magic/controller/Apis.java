@@ -3,8 +3,6 @@ package com.magic.controller;
 import java.io.IOException;
 import java.util.Random;
 
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.magic.util.FileUtils;
+import com.magic.util.MagicHelper;
 import com.magic.util.ModelList;
 import com.magic.util.ModelTextures;
 
@@ -19,24 +18,18 @@ import com.magic.util.ModelTextures;
 public class Apis {
 
 	@RequestMapping("/get")
-	public JSONObject get(@RequestParam("id") String id, HttpServletResponse response) throws IOException {
+	public JSONObject get(@RequestParam("id") String id) throws IOException {
 //		System.out.println("get");
-		String[] ids = id.split("-");
-		int modelId = Integer.valueOf(ids[0]);
-		int modelTexturesId = 0;
-		if (ids.length > 1) {
-			modelTexturesId = Integer.valueOf(ids[1]) == 0 ? 1 : Integer.valueOf(ids[1]);
-		}
-		if (modelId <= 0 || modelTexturesId <= 0) {
-			return new JSONObject();
-		}
+		int modelId = MagicHelper.getIdMap(id).get(MagicHelper.ID);
+		int modelTexturesId = MagicHelper.getIdMap(id).get(MagicHelper.TID);
+
 		Object modelName = ModelList.idToName(modelId);
 		String realModelName = "";
 		JSONObject json = null;
 		if (modelName instanceof JSONArray) {
+			// model name 为 array 型 则将array视作资源列表,modelTexturesId 为 array的序号
 			try {
-				realModelName = modelTexturesId > 0 ? ((JSONArray) modelName).getString(modelTexturesId - 1)
-						: ((JSONArray) modelName).getString(0);
+				realModelName = ((JSONArray) modelName).getString(modelTexturesId - 1);
 				json = FileUtils.readJsonFromClassPath("model/" + realModelName + "/index.json", JSONObject.class);
 				String texturesTemp = json.getJSONArray("textures").toJSONString().replace("textures",
 						"../model/" + realModelName + "/textures");
@@ -46,14 +39,12 @@ public class Apis {
 				json = new JSONObject().fluentPut("textures", null).fluentPut("model", "");
 			}
 		} else {
+			// model name 为string ,则 需要调用帮助方法，获得资源列表
 			realModelName = modelName.toString();
 			json = FileUtils.readJsonFromClassPath("model/" + realModelName + "/index.json", JSONObject.class);
-			if (modelTexturesId > 0) {
-				JSONArray modelTexturesName = ModelTextures.getTextures(modelName.toString(), modelTexturesId);
-				if (modelTexturesName != null) {
-					json.put("textures", modelTexturesName);
-				}
-			}
+			JSONArray modelTexturesName = ModelTextures.getTextures(modelName.toString(), modelTexturesId);
+			json.put("textures", modelTexturesName);
+
 		}
 
 		String model = json.getString("model");
@@ -92,9 +83,6 @@ public class Apis {
 	public JSONObject switchRole(@RequestParam("id") Integer id) throws IOException {
 //		System.out.println("switch");
 
-		if (id == null) {
-			id = 0;
-		}
 		JSONObject modelList = ModelList.getList();
 		int modelId = id + 1;
 
@@ -118,15 +106,8 @@ public class Apis {
 	public JSONObject switchTextures(@RequestParam("id") String id) throws IOException {
 //		System.out.println("switch_textures");
 
-		String[] ids = id.split("-");
-		int modelId = Integer.valueOf(ids[0]);
-		int modelTexturesId = 0;
-		if (ids.length > 1) {
-			modelTexturesId = Integer.valueOf(ids[1]);
-		}
-		if (modelId <= 0 || modelTexturesId < 0) {
-			return new JSONObject();
-		}
+		int modelId = MagicHelper.getIdMap(id).get(MagicHelper.ID);
+		int modelTexturesId = MagicHelper.getIdMap(id).get(MagicHelper.TID);
 
 		Object modelName = ModelList.idToName(modelId);
 		String realModelName = "";
@@ -139,7 +120,7 @@ public class Apis {
 			texturesArray = ModelTextures.getList(realModelName);
 		}
 
-		int newid = modelTexturesId == 0 ? 2 : modelTexturesId + 1;
+		int newid = modelTexturesId + 1;
 
 		if (newid > texturesArray.size()) {
 			newid = 1;
@@ -175,16 +156,9 @@ public class Apis {
 	@RequestMapping("/rand_textures")
 	public JSONObject randTextures(@RequestParam("id") String id) throws IOException {
 //		System.out.println("rand_textures");
+		int modelId = MagicHelper.getIdMap(id).get(MagicHelper.ID);
+		int modelTexturesId = MagicHelper.getIdMap(id).get(MagicHelper.TID);
 
-		String[] ids = id.split("-");
-		int modelId = Integer.valueOf(ids[0]);
-		int modelTexturesId = 0;
-		if (ids.length > 1) {
-			modelTexturesId = Integer.valueOf(ids[1]);
-		}
-		if (modelId <= 0 || modelTexturesId < 0) {
-			return new JSONObject();
-		}
 		Object modelName = ModelList.idToName(modelId);
 		String realModelName = "";
 		JSONArray texturesArray = null;
