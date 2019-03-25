@@ -17,7 +17,87 @@
         "file": "motions/idle/yusura_001.mtn"
       }
     ],
-    "tap": [
+    "tap_body": [
+      {
+        "file": "motions/tap/yusura_002.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_003.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_004.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_005.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_006.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_007.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_008.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_009.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_010.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_011.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_012.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_013.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_014.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_015.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_016.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_017.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_018.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_019.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_020.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_021.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_022.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_023.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_024.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_025.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_026.mtn"
+      },
+      {
+        "file": "motions/tap/yusura_027.mtn"
+      }
+    ],
+     "flick_head": [
       {
         "file": "motions/tap/yusura_002.mtn"
       },
@@ -98,6 +178,24 @@
       }
     ]
   },
+   "hit_areas_custom": {
+        "body_y": [
+            0.3,
+            -0.9
+        ],
+        "head_x": [
+            -0.35,
+            0.6
+        ],
+        "body_x": [
+            -0.3,
+            -0.25
+        ],
+        "head_y": [
+            0.19,
+            -0.2
+        ]
+    },
   "physics": "physics.json",
   "pose": "pose.json"
 }

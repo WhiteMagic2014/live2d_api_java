@@ -17,7 +17,75 @@
         "file": "motions/idle/yayoi_001.mtn"
       }
     ],
-    "tap": [
+    "tap_body": [
+      {
+        "file": "motions/tap/yayoi_002.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_003.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_004.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_006.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_007.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_008.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_009.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_010.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_011.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_012.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_013.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_014.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_015.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_016.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_017.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_018.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_019.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_020.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_021.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_022.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_023.mtn"
+      },
+      {
+        "file": "motions/tap/yayoi_024.mtn"
+      }
+    ],
+    "flick_head": [
       {
         "file": "motions/tap/yayoi_002.mtn"
       },
@@ -86,6 +154,24 @@
       }
     ]
   },
+	 "hit_areas_custom": {
+	    "body_y": [
+	        0.3,
+	        -0.9
+	    ],
+	    "head_x": [
+	        -0.35,
+	        0.6
+	    ],
+	    "body_x": [
+	        -0.3,
+	        -0.25
+	    ],
+	    "head_y": [
+	        0.19,
+	        -0.2
+	    ]
+	},
   "physics": "physics.json",
   "pose": "pose.json"
 }
