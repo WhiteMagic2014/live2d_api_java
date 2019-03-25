@@ -32,16 +32,16 @@
         ],
         "KantaiCollection/murakumo",
 	[
-		"YUSU/yusura_pd",
 		"YUSU/yusura_nd",
 		"YUSU/yusura_nn",
-		"YUSU/yusura_pn"
+		"YUSU/yusura_pn",
+		"YUSU/yusura_pd"
 	],
 	[
 		"YAYO/yayoi_nd",
+		"YAYO/yayoi_nn",
 		"YAYO/yayoi_pd",
-		"YAYO/yayoi_pn",
-		"YAYO/yayoi_nn"
+		"YAYO/yayoi_pn"
 	],
 	[
 		"RENK/renko_nd",
@@ -64,9 +64,9 @@
         "Shizuku Talk ！这里是 Shizuku ~",
         "Nep! Nep! 超次元游戏：海王星 系列",
         "艦隊これくしょん / 叢雲(むらくも)",
-	"yusura 哟!",
-	"yayoi ~",
-	"renko !",
-	"kotone ~"
+		"来自 这间教室被不回家社占领了 的 樱江樱桃 嘎呜~",
+		"来自 这间教室被不回家社占领了 的 柊木耶宵",
+		"来自 这间教室被不回家社占领了 的 木泷恋子",
+		"来自 这间教室被不回家社占领了 的 秋月琴音"
     ]
 }
