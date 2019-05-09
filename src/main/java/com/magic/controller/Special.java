@@ -15,7 +15,7 @@ import com.alibaba.fastjson.JSONObject;
 @Controller
 public class Special {
 
-	Random random = new Random();
+	
 
 	@RequestMapping("/special")
 	@ResponseBody
@@ -39,6 +39,7 @@ public class Special {
 	}
 
 	private List<Integer> red() {
+		Random random = new Random();
 		List<Integer> pool = new ArrayList<>();
 		List<Integer> result = new ArrayList<>();
 		for (int i = 1; i <= 33; i++) {
@@ -54,6 +55,7 @@ public class Special {
 	}
 
 	private Integer bule() {
+		Random random = new Random();
 		return (random.nextInt(16) + 1);
 	}
 
