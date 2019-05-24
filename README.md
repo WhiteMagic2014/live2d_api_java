@@ -21,7 +21,7 @@
 - 新增了一些模型
 
 ### 试用接口
--  Url : http://45.77.240.191:8080/live2d
+-  Url : https://server.whitemagic2014.com:8443/live2d
 ps : 服务器再海外，所以访问可能会有些慢
 
 ### 接口用法
