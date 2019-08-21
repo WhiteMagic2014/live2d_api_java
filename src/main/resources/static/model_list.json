@@ -1,5 +1,11 @@
 {
     "models": [
+	    [
+			"YUSU/yusura_nd",
+			"YUSU/yusura_nn",
+			"YUSU/yusura_pn",
+			"YUSU/yusura_pd"
+		],
         "Potion-Maker/Pio",
         "Potion-Maker/Tia",
         "bilibili-live/22",
@@ -32,12 +38,6 @@
         ],
         "KantaiCollection/murakumo",
 	[
-		"YUSU/yusura_nd",
-		"YUSU/yusura_nn",
-		"YUSU/yusura_pn",
-		"YUSU/yusura_pd"
-	],
-	[
 		"YAYO/yayoi_nd",
 		"YAYO/yayoi_nn",
 		"YAYO/yayoi_pd",
@@ -57,6 +57,7 @@
 	]
     ],
     "messages": [
+   		"来自 这间教室被不回家社占领了 的 樱江樱桃 嘎呜~",
         "来自 Potion Maker 的 Pio 酱 ~",
         "来自 Potion Maker 的 Tia 酱 ~",
         "来自 Bilibili Live 的 22 哦 ~",
@@ -64,7 +65,6 @@
         "Shizuku Talk ！这里是 Shizuku ~",
         "Nep! Nep! 超次元游戏：海王星 系列",
         "艦隊これくしょん / 叢雲(むらくも)",
-		"来自 这间教室被不回家社占领了 的 樱江樱桃 嘎呜~",
 		"来自 这间教室被不回家社占领了 的 柊木耶宵",
 		"来自 这间教室被不回家社占领了 的 木泷恋子",
 		"来自 这间教室被不回家社占领了 的 秋月琴音"
