@@ -15,8 +15,14 @@ import com.alibaba.fastjson.JSONObject;
 @Controller
 public class Special {
 
-	
-
+	/**
+	 * @Description: 这个接口其实和live2d 无关，是我自己挂在这个服务器的接口。
+	 * 	用来随机生成双色球号码...每次和朋友出去玩都会用这个接口生成买一注双色球，万一哪天中了呢？
+	 * @param n
+	 * @return
+	 * @author: chenhaoyu
+	 * @time:Dec 11, 2019 10:22:37 AM
+	 */
 	@RequestMapping("/special")
 	@ResponseBody
 	public JSONArray times(Integer n) {
