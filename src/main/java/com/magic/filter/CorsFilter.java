@@ -16,7 +16,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
  * @Description: 解决跨域
  * @author: chenhaoyu
  * @date: Mar 23, 2019 11:21:55 PM
- * @Copyright 注意：本内容仅限于梦想科技内部传阅，禁止外泄以及用于其他的商业目的。
  */
 @Component
 public class CorsFilter extends OncePerRequestFilter {

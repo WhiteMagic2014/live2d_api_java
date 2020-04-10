@@ -14,7 +14,6 @@ import com.magic.filter.CorsFilter;
  * @Description: 所有filter的配置
  * @author: chenhaoyu
  * @date: 2018年8月28日 上午11:52:13
- * @Copyright 注意：本内容仅限于梦想科技内部传阅，禁止外泄以及用于其他的商业目的。
  */
 @Configuration
 @ComponentScan({ "com.magic.filter.CorsFilter" })
