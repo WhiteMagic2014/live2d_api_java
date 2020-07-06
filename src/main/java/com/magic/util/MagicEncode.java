@@ -118,7 +118,7 @@ public class MagicEncode {
 		}
 		String name = "";
 		try {
-			name = new String(bytes, "UTF-8");
+			name = new String(bytes, "gbk");
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -129,7 +129,13 @@ public class MagicEncode {
 	static String str2HexStr(String str) {
 		char[] chars = "0123456789ABCDEF".toCharArray();// toCharArray() 方法将字符串转换为字符数组。
 		StringBuilder sb = new StringBuilder(""); // StringBuilder是一个类，可以用来处理字符串,sb.append()字符串相加效率高
-		byte[] bs = str.getBytes();// String的getBytes()方法是得到一个操作系统默认的编码格式的字节数组
+		byte[] bs = null;
+		try {
+			bs = str.getBytes("gbk");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}// String的getBytes()方法是得到一个操作系统默认的编码格式的字节数组
 		int bit;
 		for (int i = 0; i < bs.length; i++) {
 			bit = (bs[i] & 0x0f0) >> 4; // 高4位, 与操作 1111 0000
