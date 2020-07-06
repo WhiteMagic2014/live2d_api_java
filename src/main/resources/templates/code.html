@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Magic加密解密</title>
+</head>
+<body>
+
+<div style="display: flex;justify-content:flex-start;">
+	
+	
+	<div style="display: flex;flex-direction: column;justify-content:space-around; width: 75%">
+		原文本<textarea id="origin" rows="15" cols="60"></textarea>
+		
+		<div style="display: flex;justify-content:space-around;margin: 2rem;">
+			<button onclick="encode();">加密</button>
+			<button onclick="decode();">解密</button>
+			<button onclick="encodePunc();">保留标点加密</button>
+			<button onclick="decodePunc();">保留标点解密</button>
+		</div>
+		
+		处理后<textarea id="result" rows="15" cols="60"></textarea>
+	</div>
+
+	<div style="width: 25%;text-align:center">
+		
+		<table >
+		  <tr>
+		    <th>HEX</th>
+		    <th>编码</th>
+		  </tr>
+		  <tr>
+		    <td>0</td>
+		    <td><input id="hex0" type="text"  maxlength="1" style="width:1rem;" th:value="夏"></input></td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td><input id="hex1" type="text"  maxlength="1" style="width:1rem;" th:value="商"></input></td>
+		  </tr>
+		   <tr>
+		    <td>2</td>
+		    <td><input id="hex2" type="text"  maxlength="1" style="width:1rem;" th:value="周"></input></td>
+		  </tr>
+		   <tr>
+		    <td>3</td>
+		    <td><input id="hex3" type="text"  maxlength="1" style="width:1rem;" th:value="秦"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>4</td>
+		    <td><input id="hex4" type="text"  maxlength="1" style="width:1rem;" th:value="西"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>5</td>
+		    <td><input id="hex5" type="text"  maxlength="1" style="width:1rem;" th:value="新"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>6</td>
+		    <td><input id="hex6" type="text"  maxlength="1" style="width:1rem;" th:value="东"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>7</td>
+		    <td><input id="hex7" type="text"  maxlength="1" style="width:1rem;" th:value="三"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>8</td>
+		    <td><input id="hex8" type="text"  maxlength="1" style="width:1rem;" th:value="晋"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>9</td>
+		    <td><input id="hex9" type="text"  maxlength="1" style="width:1rem;" th:value="朝"></input></td>		  
+		  </tr>
+		  <tr>
+		    <td>A</td>
+		    <td><input id="hexA" type="text"  maxlength="1" style="width:1rem;" th:value="隋"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>B</td>
+		    <td><input id="hexB" type="text"  maxlength="1" style="width:1rem;" th:value="唐"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>C</td>
+		    <td><input id="hexC" type="text"  maxlength="1" style="width:1rem;" th:value="宋"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>D</td>
+		    <td><input id="hexD" type="text"  maxlength="1" style="width:1rem;" th:value="元"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>E</td>
+		    <td><input id="hexE" type="text"  maxlength="1" style="width:1rem;" th:value="明"></input></td>		  
+		  </tr>
+		   <tr>
+		    <td>F</td>
+		    <td><input id="hexF" type="text"  maxlength="1" style="width:1rem;" th:value="清"></input></td>		  
+		  </tr>
+		</table>
+	</div>
+	
+</div>
+
+
+
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script th:inline="javascript" type="text/javascript">
+
+
+function getPath() {
+    //获取当前网址，如： http://localhost:8083/proj/meun.jsp
+    var curWwwPath = window.document.location.href;
+    //获取主机地址之后的目录，如： proj/meun.jsp
+    var pathName = window.document.location.pathname;
+    var pos = curWwwPath.indexOf(pathName);
+    //获取主机地址，如： http://localhost:8083
+    var localhostPath = curWwwPath.substring(0, pos);
+    //获取带"/"的项目名，如：/proj
+    var projectName = pathName.substring(0, pathName.substr(1).indexOf('/') + 1);
+    return (localhostPath + projectName) +"/code/";
+}
+
+function encode(){
+	var param = getHex();
+	param.str = $("#origin").val();
+    $.ajax({
+         data: param,
+         type: "POST",
+         url: getPath() + "encode",
+         success: function (data) {
+			var result = data.result;
+			$("#result").text(result);
+         }
+     });
+}
+
+function decode(){
+	var param = getHex();
+	param.str = $("#origin").val();
+    $.ajax({
+         data: param,
+         type: "POST",
+         url: getPath() + "decode",
+         success: function (data) {
+			var result = data.result;
+			$("#result").text(result);
+         }
+     });
+}
+
+function encodePunc(){
+	var param = getHex();
+	param.str = $("#origin").val();
+    $.ajax({
+         data: param,
+         type: "POST",
+         url: getPath() + "encodePunc",
+         success: function (data) {
+			var result = data.result;
+			$("#result").text(result);
+         }
+     });
+}
+
+function decodePunc(){
+	var param = getHex();
+	param.str = $("#origin").val();
+    $.ajax({
+         data: param,
+         type: "POST",
+         url: getPath() + "decodePunc",
+         success: function (data) {
+			var result = data.result;
+			$("#result").text(result);
+         }
+     });
+}
+
+
+function getHex(){
+	var param = {};
+	param.hex0=$("#hex0").val();
+	param.hex1=$("#hex1").val();
+	param.hex2=$("#hex2").val();
+	param.hex3=$("#hex3").val();
+	param.hex4=$("#hex4").val();
+	param.hex5=$("#hex5").val();
+	param.hex6=$("#hex6").val();
+	param.hex7=$("#hex7").val();
+	param.hex8=$("#hex8").val();
+	param.hex9=$("#hex9").val();
+	param.hexA=$("#hexA").val();
+	param.hexB=$("#hexB").val();
+	param.hexC=$("#hexC").val();
+	param.hexD=$("#hexD").val();
+	param.hexE=$("#hexE").val();
+	param.hexF=$("#hexF").val();
+	return param;
+}
+
+</script>
+
+</html>
