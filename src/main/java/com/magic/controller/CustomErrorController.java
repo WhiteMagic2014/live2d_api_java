@@ -92,7 +92,7 @@ public class CustomErrorController extends BasicErrorController {
 			errMap.put("message", "缺少所需参数");
 		}
 
-		errMap.put("server", "你正在使用 live2d 后台接口服务");
+		errMap.put("server", "您正在使用 WhiteMagic2014 后台接口服务");
 		errMap.remove("trace");
 		errMap.remove("error");
 
