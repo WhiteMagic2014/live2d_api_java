@@ -25,9 +25,9 @@ $(window).on("load", function() {
 //    原作者php
 //    initWidget(live2d_path + "waifu-tips.json", "https://live2d.fghrsh.net/api");
 //    本机
-    initWidget(live2d_path + "waifu-tips.json", "http://localhost:8080/live2d");
+//    initWidget(live2d_path + "waifu-tips.json", "http://localhost:8080/live2d");
 //    我的java版
-//    initWidget(live2d_path + "waifu-tips.json", "https://server.whitemagic2014.com/live2d");
+    initWidget(live2d_path + "waifu-tips.json", "https://server.whitemagic2014.com/live2d");
 });
 
 //initWidget第一个参数为waifu-tips.json的绝对路径
