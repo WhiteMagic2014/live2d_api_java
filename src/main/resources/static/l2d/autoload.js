@@ -1,4 +1,4 @@
-const live2d_path = "l2d/";
+const live2d_path = "/live2d/l2d/";
 //const live2d_path = "./";
 
 $("<link>").attr({href: live2d_path + "waifu.css", rel: "stylesheet", type: "text/css"}).appendTo("head");
@@ -24,8 +24,6 @@ $.ajax({
 $(window).on("load", function() {
 //    原作者php
 //    initWidget(live2d_path + "waifu-tips.json", "https://live2d.fghrsh.net/api");
-//    本机
-//    initWidget(live2d_path + "waifu-tips.json", "http://localhost:8080/live2d");
 //    我的java版
     initWidget(live2d_path + "waifu-tips.json", "https://server.whitemagic2014.com/live2d");
 });
