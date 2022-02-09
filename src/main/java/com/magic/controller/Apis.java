@@ -76,7 +76,7 @@ public class Apis {
 			json.put("expressions", expressionsResult);
 		}
 
-		return json;
+		return signature(json);
 	}
 
 	@RequestMapping("/switch")
@@ -99,7 +99,7 @@ public class Apis {
 				.fluentPut("message", messages.get(modelId - 1)));
 
 		System.out.println(result);
-		return result;
+		return signature(result);
 	}
 
 	@RequestMapping("/switch_textures")
@@ -131,7 +131,7 @@ public class Apis {
 
 		JSONObject result = new JSONObject();
 		result.put("textures", new JSONObject().fluentPut("id", newid).fluentPut("name", realModelName));
-		return result;
+		return signature(result);
 	}
 
 	@RequestMapping("/rand")
@@ -150,7 +150,7 @@ public class Apis {
 		}
 		JSONObject result = new JSONObject();
 		result.put("model", new JSONObject().fluentPut("id", newNum).fluentPut("message", messages.get(newNum - 1)));
-		return result;
+		return signature(result);
 	}
 
 	@RequestMapping("/rand_textures")
@@ -181,7 +181,14 @@ public class Apis {
 
 		JSONObject result = new JSONObject();
 		result.put("textures", new JSONObject().fluentPut("id", newid).fluentPut("name", realModelName));
-		return result;
+		return signature(result);
+	}
+
+
+	private JSONObject signature(JSONObject origin){
+		origin.put("github","https://github.com/WhiteMagic2014/live2d_api_java");
+		origin.put("msg","thanks for your using, why not give me a star on github? ");
+		return origin;
 	}
 
 }
